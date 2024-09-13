@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-3#av2c6nptlbbb6^muqkchu&fe3wv&n$t2+g$v!ir-f5%doocb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['web-production-76604.up.railway.app', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -131,13 +131,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-MEDIA_URL = '/images/'
+MEDIA_URL = '/media/'
 
 STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
+MEDIA_DIR = BASE_DIR / 'media'
 
-MEDIA_ROOT = BASE_DIR / 'static/images'
+MEDIA_ROOT = MEDIA_DIR
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Whitenoise static files storage settings
