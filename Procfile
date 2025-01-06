@@ -1,1 +1,2 @@
-web: gunicorn studybud.wsgi --log-file -
+web: gunicorn devsearch.wsgi --log-file -
+
